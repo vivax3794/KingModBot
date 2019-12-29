@@ -1,0 +1,8 @@
+secrets.json
+/.eggs
+/src/RSETHEKING_Moderator_Bot.egg-info
+/RSETHEKING_Moderator_Bot.egg-info
+/.pytest_cache
+/*/__pycache__
+/*/*/__pycache__
+/*/*/*/__pycache__
