@@ -1,7 +1,8 @@
-from KingModBot import TW_Connect
+from KingModBot import TW_Connect, MongoDatabase
 
 # clrargs
 import sys
+import socket
 
 
 def main():
@@ -11,3 +12,7 @@ def main():
     # Hash connections/api tokens for printable views
     # Raw view will be on the self.client_id and self.token
     twitch_connection.hash_connection()
+
+    socket = socket.socket()
+
+    db = MongoDatabase()

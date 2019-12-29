@@ -15,7 +15,7 @@ setup(
     tests_require=["pytest"],
     entry_points={
         'console_scripts': [
-            'KingModBot = KingModBot.scripts.main:main',
+            'KingModBot = KingModBot.controllers.main:main',
         ]
     },
     license="Apache License",
