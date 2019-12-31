@@ -2,7 +2,6 @@ from KingModBot import TW_Connect, MongoDatabase
 
 # clrargs
 import sys
-import socket
 
 
 def main():
@@ -13,6 +12,8 @@ def main():
     # Raw view will be on the self.client_id and self.token
     twitch_connection.hash_connection()
 
-    socket = socket.socket()
+    db = MongoDatabase(secrets_path)
+    db = db.connect()
 
-    db = MongoDatabase()
+    print(db.get_collection('twitchbot_test'))
+    # db.create_collection('twitchbot_test')
